@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #24252A;
+}
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 8%;
+    padding-right: 5%;
+}
+
+#header-title {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+#header-title a {
+    font-size: 27px;
+    font-family: Quicksand;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header li a {
+    font-family: Quicksand;
+    font-size: 17px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+#header-title span {
+    background-color: #eb469e;
+    font-size: 32px;
+    padding: 10px 14px;
+    border-radius: 100px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+header ul li a {
+    transition: color 0.3s ease 0s;
+}
+
+header ul li a:hover {
+    color: #0088a9;
+}
+
+.contact {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.contact:hover {
+    background-color: rgba(0,136,169,0.8);
+    color: white;
+}
+
+
+
+
+
+.item-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.juice-list {
+    display: flex;
+    column-gap: 100px;
+}
+
+.juice-list img {
+    width: 250px;
+    border-radius: 100%;
+}
+
+#apple-juice-buy-btn,
+#orange-juice-buy-btn,
+#grape-juice-buy-btn {
+    width: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: 4px #53bd7a solid;
+    border-radius: 50px;
+    background: none;
+    height: 50px;
+    margin-left: 77px;
+    cursor: pointer;
+    color: #ecf0f1;
+    margin-top: 20px;
+}
+
+#apple-juice-buy-btn:hover,
+#orange-juice-buy-btn:hover,
+#grape-juice-buy-btn:hover {
+    background-color: #497a65;
+}
+
+#apple-juice-buy-btn:active,
+#orange-juice-buy-btn:active,
+#grape-juice-buy-btn:active {
+    background-color: #497a65;
+    transform: translateY(4px);
+}
+
+
+#apple-juice-caption,
+#orange-juice-caption,
+#grape-juice-caption {
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ecf0f1;
+    margin-top: 10px;
+    width: 250px;
+    text-align: center
+}
+
+#apple-btn-action,
+#orange-btn-action,
+#grape-btn-action {
+    font-family: Lato;
+    color: #ecf0f1;
+    margin-top: 25px;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+#confirm {
+    border: none;
+    background-color: #22903f;
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #ecf0f1;
+    width: 100px;
+}
+
+#confirm:hover {
+    background-color: chocolate;
+}
+
+#confirm:active {
+    background-color: chocolate;
+    transform: translateY(4px)
+}
+
+
+
+
+
+
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.welcome p, .welcome a {
+    font-family: Lato;
+    color: #ecf0f1;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.welcome a {
+    cursor: pointer;
+    background: none;
+    border: solid 3px #ecf0f1;
+    padding: 10px 12px;
+    margin-top: 30px;
+}
+
+.welcome a:hover {
+    background-color: rgba(0,136,169,1);
+}
+
+.welcome a:active {
+    transform: translateY(2px);
+}
+
+
+
+
+
+
+
+@media all and (max-width: 1000px) {
+    .juice-list {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+    #header-title {
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+    header ul li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+}
+
+@media all and (max-width: 435px) {
+    header ul li {
+        padding: 0px 10px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    header ul li {
+        padding: 0px 5px;
+    }
+}
